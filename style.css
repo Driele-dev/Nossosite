@@ -394,8 +394,121 @@ p {
     
 }
 
+#controle-fonte {
+    position: fixed;
+    top: 68px;
+    right: 20px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  #controle-fonte button {
+    background-color: #6f4e37;
+    color: #fff;
+    border: none;
+    margin: 2px;
+    padding: 8px 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #controle-fonte button:hover{
+    background-color: #5a392a;
+  }
+  
+  
+  .contraste-ativo {
+    background-color: #000 !important;
+    color: #ffff00 !important;
+  }
+
+  #acessibilidade {
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    z-index: 10000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    gap: 10px;
+  }
+  
+  #acessibilidade button {
+    background-color: #BDDCED;
+    color: #fff;
+    border: none;
+    margin: 5px 0;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #acessibilidade button:hover {
+    background-color: #a2c5d8;
+  }
+  
+  .contraste-ativo {
+    background-color: #000 !important;
+    color: #fff !important;
+  }
+  
+  .contraste-ativo a {
+    color: #0ff !important;
+  }
+  
+  /* Ativa contraste para o corpo da página */
+  .contraste-ativo, .contraste-ativo * {
+    background-color: #000 !important;
+    color: #fff !important;
+    border-color: #fff !important;
+    fill: #fff !important;
+  }
+  
+  /* Links */
+  .contraste-ativo a {
+    color: #0ff !important;
+    text-decoration: underline;
+  }
+  
+  /* Botões */
+  .contraste-ativo button {
+    background-color: #222 !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+  }
+  
+  /* Inputs e Textareas */
+  .contraste-ativo input,
+  .contraste-ativo textarea,
+  .contraste-ativo select {
+    background-color: #000 !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+  }
+  
+  /* Cabeçalhos */
+  .contraste-ativo h1,
+  .contraste-ativo h2,
+  .contraste-ativo h3,
+  .contraste-ativo h4,
+  .contraste-ativo h5,
+  .contraste-ativo h6 {
+    color: #ff0 !important;
+  }
 
 
+
+  
+  
 
   
   
