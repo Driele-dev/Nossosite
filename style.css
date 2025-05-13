@@ -1,0 +1,401 @@
+:root {
+    --verde: #C7DB9C;
+    --marrom: #584829; 
+    --amarelo: #FFF0BD;
+    --fundo: #FDAB9E;
+    --border: 0.1rem solid #E50046;
+    --rosa: #E50046;
+    --azul: #BDDCED;
+    --font-size: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.2s linear;
+    font-family: 'Roboto Slab' serif;
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--branco);
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    border-bottom: var(--border);
+    background-color: var(--rosa);
+    height: 120px; 
+    padding: 5px 0;
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.navbar a {
+    margin: 0 1rem;
+    font-size: 1.3rem;
+    color: var(--amarelo);
+}
+
+
+.navbar a:hover {
+    color: var(--azul);
+    border-bottom: 0.1rem solid var(--amarelo);
+    padding-bottom: 0.5rem;
+}
+
+.icones {
+    display: flex;
+    gap: 50px;
+}
+
+.icones i {
+    width: 30px;
+    height: 30px;
+    color: var(--amarelo);
+    cursor: pointer;
+}
+
+.icones i:hover {
+    transform: scale(1.5);
+    color: var(--azul);
+}
+
+.btn {
+    background-color: var(--azul);
+    color: var(--marrom);
+    padding: 0.7rem 0.7rem;
+    display: inline-block;
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+}
+
+.btn:hover {
+    letter-spacing: 0.1rem;
+}
+
+.nome{
+    color: var(--rosa);
+    font-size: 50px;
+} 
+
+.home-container h3 {
+    color: var(--marrom);
+}
+
+.home-container {
+    background: url("fundo.png");
+    background-position: center;
+    background-size: cover;
+}
+
+.home-container section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    max-width: 30rem;
+    margin-top: 3rem;
+}
+
+.content p {
+    color: var(--marrom);
+    font-size: 1.3rem;
+    font-weight: 100;
+    line-height: 1.8rem;
+    padding: 1rem 0;
+}
+
+.title {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--rosa);
+    text-transform: uppercase;
+    margin: 1rem;
+}
+
+/* Estilo para alinhar imagem e texto */
+.texto-colunas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.coluna.texto {
+    flex: 1;
+    text-align: justify;
+}
+
+.coluna.imagem img {
+    width: 100%;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .texto-colunas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coluna {
+        width: 100%;
+    }
+
+    .coluna.texto {
+        text-align: center;
+    }
+}
+
+section h2 {
+    color: var(#FFF0BD);
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin: 120px;
+}
+
+p {
+    color: var(#FFF0BD);
+    font-size: 1.2rem;
+    text-align: justify;
+    margin-bottom: 2rem;
+}
+
+.menu .box-container .box .img{
+    height: 7rem;}
+    
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    gap: 0.7rem;
+}
+.servicos .box-container .box {
+    max-width: 350px;
+    text-align: center;
+    border: var(--border);
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.servicos .box-container .box .img {
+    height: 150rem;
+}
+
+.servicos .box-container .box h3 {
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    color: var(--marrom);
+}
+
+.servicos .box-container .box .price {
+    font-size: 1.2rem;
+    padding: 0.4rem 0;
+}
+
+.servicos .box-container .box .price span {
+    font-size: 1.1rem;
+    text-decoration: line-through;
+    font-weight: 200;
+}
+  
+/* Formulário */
+ 
+
+.formulario-container {
+    background-color: var(--azul);
+    padding: 3rem;
+    border-radius: 10px;
+    margin: 2rem auto;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: url("ImagemForm.png"); /* imagem decorativa */
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: contain;
+  }
+ 
+  .formulario-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--rosa);
+  }
+ 
+  #formulario label {
+    display: block;
+    margin-bottom: 1rem;
+    color: var(--marrom);
+    font-weight: bold;
+  }
+ 
+  #formulario input,
+  #formulario select {
+    width: 100%;
+    padding: 0.7rem;
+    border-radius: 5px;
+    border: 1px solid var(--marrom);
+    margin-top: 0.5rem;
+  }
+ 
+  .botoes {
+    margin-top: 1.5rem;
+  }
+ 
+  .botoes button {
+    padding: 0.6rem 1.2rem;
+    margin-right: 10px;
+    background-color: var(--amarelo);
+    color: var(--marrom);
+    border: var(--border);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+ 
+  .botoes button:hover {
+    background-color: var(--verde);
+  }
+ 
+  .ajuda {
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    color: var(--marrom);
+  }
+ 
+  .icon-ajuda {
+    background: var(--amarelo);
+    border-radius: 50%;
+    padding: 0.3rem 0.5rem;
+  }
+
+  /* Estilo para alinhar imagem e texto */
+.texto-colunas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.coluna.texto {
+    flex: 1;
+    text-align: justify;
+}
+
+.coluna.imagem img {
+    width: 500px;
+    max-width: 700px;
+    border-radius: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .texto-colunas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .coluna {
+        width: 200px;
+    }
+
+    .coluna.texto {
+        text-align: center;
+
+    }
+}
+
+.servicos .box img {
+    width: 150px;
+    height: auto;
+  }
+
+  .footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    background-color: var(--fundo);
+    border-top: var(--border);
+    padding: 3rem 1rem;
+    text-align: center;
+}
+
+.footer .redessociais i {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.7rem;
+    cursor: pointer;
+    color: var(--marrom);
+}
+
+.footer .redessociais i:hover {
+    transform: scale(1.2);
+    color: var(--amarelo);
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer .logo img {
+    width: 120px;
+    margin-bottom: 1rem;
+    border-radius: 80%;
+}
+
+.footer-nav {
+    margin: 1rem 0;
+}
+
+.footer-nav a {
+    margin: 0 1rem;
+    font-size: 1.3rem;
+    color: var(--marrom);
+    text-decoration: none;
+    font-weight: 500;
+}
+.footer-nav a:hover {
+    color: var(--amarelo);
+    border-bottom: 0.1rem solid var(--amarelo);
+    padding-bottom: 0.3rem;
+}
+
+.footer-copy {
+    font-size: 1rem;
+    margin-top: 1rem;
+    color: var(--border);
+    text-align: center;
+    
+}
+
+
+
+
+  
+  
